@@ -1,0 +1,341 @@
+/*
+ * author  wushuyi
+ * Copyright  wanfan
+ */
+/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
+body {
+	font:13px Helmet,Freesans,sans-serif;
+}
+/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
+/* We like off-black for text. */
+body, select, input, textarea {
+	color:#333;
+}
+a {
+	color:#03f;
+}
+a:hover {
+	color:#69f;
+}
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection {
+	background:#fcd700;
+	color:#fff;
+	text-shadow:none;
+}
+::selection {
+	background:#fcd700;
+	color:#fff;
+	text-shadow:none;
+}
+/*	j.mp/webkit-tap-highlight-color */
+a:link {
+	-webkit-tap-highlight-color:#fcd700;
+}
+ins {
+	background-color:#fcd700;
+	color:#000;
+	text-decoration:none;
+}
+mark {
+	background-color:#fcd700;
+	color:#000;
+	font-style:italic;
+	font-weight:bold;
+}
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder {
+	color:#a9a9a9;
+}
+textarea:-moz-placeholder {
+	color:#a9a9a9;
+}
+/*
+ * audio js
+ */
+/* page style
+ -------------------------------------------------------------------------------*/
+.wrapper {
+	width:640px;
+	height:1008px;
+	position:relative;
+	background-image:url('../image/bg.png');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+.topimg {
+	width:538px;
+	height:538px;
+	position:absolute;
+	left:50%;
+	margin-left:-269px;
+	margin-top:-130px;
+	background-image:url('../image/topimg.png');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+.srmm_title {
+	width:358px;
+	height:76px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-179px;
+	margin-top:-50px;
+	background-image:url('../image/srmm_title.png');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+.passwdbox {
+	width:440px;
+	height:84px;
+	left:50%;
+	top:50%;
+	position:absolute;
+	margin-left:-220px;
+	margin-top:50px;
+	border:1px solid #CBCBCB;
+	background-color:#FFFFFF;
+}
+.passwdbox .passwd {
+	width:380px;
+	height:48px;
+	margin-left:30px;
+	margin-top:16px;
+	border:none;
+	outline:none;
+	font-family:'黑体';
+	font-size:28px;
+}
+.srmm_submnt {
+	width:440px;
+	height:84px;
+	left:50%;
+	top:50%;
+	position:absolute;
+	margin-left:-220px;
+	margin-top:180px;
+	background-color:#E54082;
+	background-image:url('../image/enter.png');
+	background-repeat:no-repeat;
+	background-position:166px 20px;
+	background-size:88px;
+	cursor:pointer;
+}
+.djbf_title {
+	width:287px;
+	height:119px;
+	left:50%;
+	top:50%;
+	position:absolute;
+	margin-left:-144px;
+	margin-top:-50px;
+	background-image:url('../image/djst_title.png');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+.djbf_playbox {
+	width:304px;
+	height:82px;
+	left:50%;
+	top:50%;
+	position:absolute;
+	margin-left:-152px;
+	margin-top:110px;
+}
+.djbf_share {
+	width:304px;
+	height:82px;
+	left:50%;
+	top:50%;
+	position:absolute;
+	margin-left:-152px;
+	margin-top:220px;
+	background:#E54082;
+	background-image:url('../image/share.png');
+	background-repeat:no-repeat;
+	background-position:70px 20px;
+}
+.pubmaks {
+	width:100%;
+	height:100%;
+	position:relative;
+	z-index:999;
+	background-color:black;
+	opacity:0.8;
+	display:none;
+}
+.share_maks {
+	width:546px;
+	height:158px;
+	left:50%;
+	top:0%;
+	position:fixed;
+	z-index:1000;
+	margin-left:-273px;
+	margin-top:30px;
+	background-image:url('../image/pop_share.png');
+	background-repeat:no-repeat;
+	background-size:100%;
+	display:none;
+}
+.info_title {
+	width:562px;
+	height:178px;
+	left:50%;
+	top:50%;
+	position:absolute;
+	margin-left:-280px;
+	margin-top:-50px;
+	background-image:url('../image/info_title.png');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+.info_cent {
+	width:409px;
+	height:132px;
+	left:50%;
+	top:50%;
+	position:absolute;
+	margin-left:-280px;
+	margin-top:200px;
+	background-image:url('../image/info_cent.png');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+.pg2 {
+	display:none;
+}
+/* Media queries
+ -------------------------------------------------------------------------------*/
+@media screen and(max-width:480px) {
+}
+/* Print styles
+ -------------------------------------------------------------------------------*/
+@media print {
+}
+/* audio css
+ -------------------------------------------------------------------------------*/
+.audiojs audio {
+	position:absolute;
+	left:-1px;
+}
+.audiojs {
+	width:304px;
+	height:82px;
+	background:#E54082;
+	overflow:hidden;
+	font-family:monospace;
+	font-size:12px;
+	border-radius:14px;
+}
+.audiojs .play-pause {
+	width:96px;
+	height:82px;
+	padding:16px 22px;
+	margin:0px;
+	float:left;
+	overflow:hidden;
+}
+.audiojs p {
+	display:none;
+	width:25px;
+	height:40px;
+	margin:0px;
+	cursor:pointer;
+}
+.audiojs .play {
+	display:block;
+}
+.audiojs .scrubber {
+	position:relative;
+	float:left;
+	width:174px;
+	background:#F3C7D9;
+	height:8px;
+	margin-top:36px;
+	margin-bottom:36px;
+	border-left:0px;
+	border-bottom:0px;
+	border-radius:6px;
+	overflow:hidden;
+}
+.audiojs .progress {
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:8px;
+	width:0px;
+	background:#FFFFFF;
+	z-index:1;
+}
+.audiojs .loaded {
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:8px;
+	width:0px;
+}
+.audiojs .time {
+	float:left;
+	height:36px;
+	line-height:36px;
+	margin:0px 0px 0px 6px;
+	padding:0px 6px 0px 12px;
+	border-left:1px solid #000;
+	color:#ddd;
+	text-shadow:1px 1px 0px rgba(0,0,0,0.5);
+	display:none;
+}
+.audiojs .time em {
+	padding:0px 2px 0px 0px;
+	color:#f9f9f9;
+	font-style:normal;
+}
+.audiojs .time strong {
+	padding:0px 0px 0px 2px;
+	font-weight:normal;
+}
+.audiojs .error-message {
+	float:left;
+	display:none;
+	margin:0px 10px;
+	height:36px;
+	width:400px;
+	overflow:hidden;
+	line-height:36px;
+	white-space:nowrap;
+	color:#fff;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	-icab-text-overflow:ellipsis;
+	-khtml-text-overflow:ellipsis;
+	-moz-text-overflow:ellipsis;
+	-webkit-text-overflow:ellipsis;
+}
+.audiojs .error-message a {
+	color:#eee;
+	text-decoration:none;
+	padding-bottom:1px;
+	border-bottom:1px solid #999;
+	white-space:wrap;
+}
+.play-pause p {
+	background-repeat:no-repeat;
+	width:51px;
+	height:51px;
+}
+.audiojs .play {
+	background-image:url("../image/play_btn.png");
+	display:block;
+}
+.audiojs .pause {
+	background-image:url("../image/pause_btn.png");
+	display:none;
+}
+.playing .play {
+	display:none;
+}
+.playing .pause {
+	display:block;
+}
