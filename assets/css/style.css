@@ -59,17 +59,27 @@ textarea:-moz-placeholder {
 	width:640px;
 	height:1008px;
 	position:relative;
-	background-image:url('../image/bg.png');
+	background-image:url('../image/bg.jpg');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+.logo{
+	width: 112px;
+	height: 45px;
+	position: absolute;
+	top: 14px;
+	left: 12px;
+	background-image:url('../image/logo.png');
 	background-repeat:no-repeat;
 	background-size:100%;
 }
 .topimg {
-	width:538px;
-	height:538px;
+	width:322px;
+	height:344px;
 	position:absolute;
 	left:50%;
-	margin-left:-269px;
-	margin-top:-130px;
+	margin-left:-161px;
+	margin-top: 50px;
 	background-image:url('../image/topimg.png');
 	background-repeat:no-repeat;
 	background-size:100%;
@@ -115,7 +125,7 @@ textarea:-moz-placeholder {
 	position:absolute;
 	margin-left:-220px;
 	margin-top:180px;
-	background-color:#E54082;
+	background-color:#01A5B1;
 	background-image:url('../image/enter.png');
 	background-repeat:no-repeat;
 	background-position:166px 20px;
@@ -151,7 +161,7 @@ textarea:-moz-placeholder {
 	position:absolute;
 	margin-left:-152px;
 	margin-top:220px;
-	background:#E54082;
+	background:#01A5B1;
 	background-image:url('../image/share.png');
 	background-repeat:no-repeat;
 	background-position:70px 20px;
@@ -223,7 +233,7 @@ textarea:-moz-placeholder {
 .audiojs {
 	width:304px;
 	height:82px;
-	background:#E54082;
+	background:#01A5B1;
 	overflow:hidden;
 	font-family:monospace;
 	font-size:12px;

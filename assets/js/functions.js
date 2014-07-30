@@ -38,7 +38,7 @@
 					alert("请输入密码!");
 				}
 				
-				/*
+				
 				if (passwd == 'xiaowu') {
 					_THIS.settings.audiopath = 'http://kiehls-voice.b0.upaiyun.com/auto.mp3';
 					$('audio').attr({
@@ -48,7 +48,7 @@
 					_thisDom.removeClass('lock');
 					return false;
 				}
-				*/
+				
 
 				var updata = {
 					password : passwd,
