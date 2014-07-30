@@ -99,9 +99,11 @@ var adaptUILayout = (function() {
         viewport.name = 'viewport';
         viewport.id = 'viewport';
         viewport.content = initialContent;
-
-        if (isiOS && window.orientation != 0 && window.orientation != 180) {
-            viewport.content = 'width=640';
+		if(!window.orientation){
+			viewport.content = 'width='+uiWidth+' , user-scalable=no';
+            head.length > 0 && head[head.length - 1].appendChild(viewport);
+		}else if (isiOS && window.orientation != 0 && window.orientation != 180) {
+            viewport.content = 'width='+uiWidth;
             head.length > 0 && head[head.length - 1].appendChild(viewport);
         } else {
             head.length > 0 && head[head.length - 1].appendChild(viewport);
